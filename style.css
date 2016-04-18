@@ -1,0 +1,45 @@
+body{
+    margin: auto;
+}
+#header {
+    background-color:black;
+    color: white;
+    text-align:left;
+    padding: 1px;
+    height: 100px;
+}
+#nav {
+    position: fixed;
+    line-height:30px;
+    background-color:#eeeeee;
+    height: calc(100% - 150px);
+    width:100px;
+    float:left;
+    padding:5px; 
+}
+#feeds {
+    width: calc(100% - 120px);
+    height: 600px;
+    float: right;
+    padding:5px; 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear: both;
+    text-align:center;
+    padding:5px; 
+}
+
+#account {
+    float: right;
+    padding: px;
+}
+
+.feed{
+    border: 2px solid black;
+    height: 125px;
+    width: 125px;
+    margin: 10px;
+    float: right;
+}
