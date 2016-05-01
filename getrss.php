@@ -1,10 +1,12 @@
 <?php
-//get the q parameter from URL
+
+//get the search term  from URL
 $q= $_GET["q"];
 
-//find out which feed was selected
+//search google news
 $xml=("http://news.google.com/news?cf=all&hl=en&pz=1&ned=us&q=$q&output=rss");
 
+//create new xmldoc
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($xml);
 
@@ -16,23 +18,24 @@ $channel_link = $channel->getElementsByTagName('link')
 ->item(0)->childNodes->item(0)->nodeValue;
 
 //output elements from "<channel>"
+/*
 echo("<p><a href='" . $channel_link
   . "'>" . $channel_title . "</a>");
 echo("<br>");
 echo($channel_desc . "</p>");
+*/
 
-//get "<item>" elements
+//get 8 <item> elements
 $x=$xmlDoc->getElementsByTagName('item');
 for ($i=0; $i<=7; $i++) {
     $item_link=$x->item($i)->getElementsByTagName('link')
   ->item(0)->childNodes->item(0)->nodeValue;
   $item_desc=$x->item($i)->getElementsByTagName('description')
   ->item(0)->childNodes->item(0)->nodeValue;
-  
- $des = explode("...", $item_desc);
+$des = explode("...", $item_desc); 
     
-//output elements   
-echo ("<div class='feed'><p>" . $des[0] . "</table></description></p></div>");
+//output <item> elements   
+echo ("<div class='feed'  onclick=location.href='$item_link' style='cursor:pointer;'<p>" . $des[0] . "...</table></description></p></div>");
 }
 
 ?>
