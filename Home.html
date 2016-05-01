@@ -12,7 +12,7 @@
             <div id=searchbar>
             <form>
             <input type="text" id="search" />
-            <button type="button" onclick="showRSS()" > Search</button>
+            <button type="button" onclick="searchRSS()" > Search</button>
             </form>
             </div>
             <div id="account">
@@ -21,8 +21,15 @@
             </div>
         </div>
         <div id="nav">
+            <button type="button" class="navbtn" onclick="RSS(' ')"> Top Stories</button>
+             <button type="button" class="navbtn" onclick="RSS('world')"> World</button>
+             <button type="button" class="navbtn" onclick="RSS('U.S.')"> U.S. </button>
+             <button type="button" class="navbtn"onclick ="RSS('Politics')"> Politics</button>
+             <button type="button" class="navbtn"onclick ="RSS('Sports')">Sports</button>
+             <button type="button" class="navbtn" onclick ="RSS('Business')"> Business</button>
+        
         </div>
-        <div id="rssOutput">RSS-feed will be listed here...
+        <div id="feeds">RSS-feed will be listed here...
         </div>
     </body>
 </html>
