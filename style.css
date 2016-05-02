@@ -4,7 +4,7 @@ body{
 }
 #header {
     background-color: #293E6A;
-    width:100%;
+    width:1350px;
     color: white;
     margin-left: 165px;
     height: 80px;
@@ -14,10 +14,8 @@ body{
 }
 
 #top{
-    /*box-shadow: 5px 5px 2px #888;*/
     background-color:black;
     white-space:nowrap;
-    /*margin-top:40px;*/
     height: 40px;
 }
 #title {
@@ -33,6 +31,7 @@ body{
     float:left; 
     text-align: center;
     border-radius:5px;
+    z-index: 1;
 }
 
 #account {
@@ -110,7 +109,7 @@ input {
 }
 
 #feeds {
-    width: 100%;
+    width: 1300px;
     height: 100%;
     float: left;
     margin-left:165px;
@@ -124,6 +123,7 @@ input {
     position: absolute;
     bottom:0;
     color: white;
+    background-color:#3B5998;
     align: bottom;
     font-size: x-small;
     font-family: "Lucida sans unicode", sans-serif;
