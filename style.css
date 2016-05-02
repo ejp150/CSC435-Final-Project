@@ -1,26 +1,38 @@
 body{ 
     margin: auto;
+    background-color: #01013B;
 }
 #header {
-    background-color:black;
+    background-color: #293E6A;
     width:100%;
     color: white;
-    text-align:left;
-    margin: auto;
-    padding: 10px;
-    height: 100px;
+    margin-left: 165px;
+    height: 80px;
+    float:left;
+    font-family: impact, charcoal, sans-serif;
+    border-radius: 5px;
+}
+
+#top{
+    /*box-shadow: 5px 5px 2px #888;*/
+    background-color:black;
+    white-space:nowrap;
+    /*margin-top:40px;*/
+    height: 40px;
+}
+#title {
+    float:left;
+    margin-left:30%;
+    margin-right:10px;
 }
 #nav {
     position: fixed;
-    background-color:#eeeeee;
+    background-color:#3B5998;
     height: 100%;
-    width:100px;
+    width:160px;
     float:left; 
-}
-#feeds {
-    width: calc(100% - 100px);
-    height: 600px;
-    float: right;
+    text-align: center;
+    border-radius:5px;
 }
 
 #account {
@@ -31,16 +43,38 @@ body{
 .navbtn{
    width: 100%;
     height: 30px;
+    background-color: #D0CABF;
+    color: blue;
+    border: 3px solid;
+    border-color: #293E6A;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family:"Lucida sans unicode", Gadget, sans-serif;
+    font-weight: bold;
+}
+
+.navbtn:active {
+    box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+}
+
+.navbtn:hover {
+    background-color:#E9E9F5;
 }
 
 .feed{
     position: relative;
-    border: 2px solid black;
+    border: 2px solid #01013B;
     height: 300px;
     width: 300px;
     margin: 5px;
-    float: right;
+    float: left;
+    font-family: "Lucida sans unicode", sans-serif;
+    box-shadow: 5px 5px 2px #888;
+    border-radius: 2px;
 }
+
+.feed:hover {
+    background-color: #E9E9F5;}
 
 input {
     border-radius:5px;  
@@ -48,11 +82,49 @@ input {
 
 #searchbar {
     float: left;
-    margin-left: 35%;
+    font-family: "Lucida sans unicode", sans-serif;
+    color:white;
 }
 
-#rssOutput{
-    width: calc(100% - 100px);
-    height: 600px;
-    float: right;
+#search {
+    border-radius:15px; 
+    -moz-border-radius:15px; 
+    -webkit-border-radius:15px; 
+}
+
+#button {
+    margin-bottom:25px;
+    background-color: #D0CABF;
+    border: 1px solid;
+    border-color: #293E6A;
+    border-radius: 5px;
+    color:blue;
+    font-weight: bold;
+}
+#button:hover {
+    background-color:#DADAF2;
+}
+
+#button:active {
+    box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+}
+
+#feeds {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left:165px;
+    background-color: #D0CABF;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+#footer {
+    position: absolute;
+    bottom:0;
+    color: white;
+    align: bottom;
+    font-size: x-small;
+    font-family: "Lucida sans unicode", sans-serif;
 }
