@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>WebRss</title>
@@ -8,26 +9,32 @@
     </head>
 	<body>
 		<div id="header">
-            <h1>Web RSS</h1>
-            <div id=searchbar>
-            <form>
-            <input type="text" id="search" />
-            <button type="button" onclick="searchRSS()" > Search</button>
-            </form>
-            </div>
-            <div id="account">
-                <button type="button">account stuff</button>
-                <button type="button"> login</button>
+            <div id="top">
+            <h1 id="title">Web RSS</h1>
+            <img src="rsslogo.png" height="75px" width="75px">
             </div>
         </div>
-        <div id="nav">
+        <div id="nav"><div id=searchbar>
+            <p>Search Feeds:
+            <form>
+            <input type="text" id="search" />
+            <button type="button" id="button" onclick="searchRSS()" > Search</button>
+            </form>
+            </div>
             <button type="button" class="navbtn" onclick="RSS(' ')"> Top Stories</button>
              <button type="button" class="navbtn" onclick="RSS('world')"> World</button>
              <button type="button" class="navbtn" onclick="RSS('U.S.')"> U.S. </button>
              <button type="button" class="navbtn"onclick ="RSS('Politics')"> Politics</button>
              <button type="button" class="navbtn"onclick ="RSS('Sports')">Sports</button>
              <button type="button" class="navbtn" onclick ="RSS('Business')"> Business</button>
-        
+             <button type="button" class="navbtn" onclick ="RSS('Music')"> Music</button>
+             <button type="button" class="navbtn" onclick ="RSS('Technology')"> Tech</button>
+             <button type="button" class="navbtn" onclick ="RSS('Health')"> Health</button>
+             <div id="footer">
+             <p>Created by Daniel Sandstrom and Ethan Poll <br>
+             <a href="https://github.com/ejp150/CSC435-Final-Project.git">Here</a> is the source code for the site. 
+             </p>
+             </div>
         </div>
         <div id="feeds">RSS-feed will be listed here...
         </div>
