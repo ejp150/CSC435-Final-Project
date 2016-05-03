@@ -6,11 +6,7 @@ var ele = document.getElementById("search");
     RSS(str);
 }
 
-function clicked(str){
-    RSS(str);
-}
-
-//get RSS
+//get RSS feeds
 function RSS(str) {
   if (str.length ===0) { 
     document.getElementById("rssOutput").innerHTML="";
@@ -20,8 +16,7 @@ function RSS(str) {
     // code for IE7+, Firefox, Chrome, Opera, Safari
     xmlhttp=new XMLHttpRequest();
   }
-    
-  //when ready out put
+  //when ready output
   xmlhttp.onreadystatechange=function() {
   document.getElementById("feeds").innerHTML=xmlhttp.responseText;
   };
@@ -29,13 +24,7 @@ function RSS(str) {
   xmlhttp.send();
 }
 
-function link(str){
-   var t = window.Event.target;
-t.location.href = str;
-}
 window.onload = function () {
-        //sidebar();
-        //feeds()
         RSS(" ");
     };
 
